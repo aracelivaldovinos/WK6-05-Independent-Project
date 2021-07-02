@@ -1,8 +1,8 @@
-# (Application Name)
+# Currency Exchanger
 
-#### (Brief Description of Application)
+#### An application that allows users to convert U.S. dollars to another currency
 
-#### By (Your Name Here)
+#### By Araceli Valdovinos
 
 ## Technologies Used
 

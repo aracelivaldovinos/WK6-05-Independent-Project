@@ -7,6 +7,7 @@ export default class ExchangeCurrency {
         }
         return response.json();
       });
+      
    
   }
   
