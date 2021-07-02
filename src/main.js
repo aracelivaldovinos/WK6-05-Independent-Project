@@ -24,10 +24,31 @@ $('button#conversionBtn').click(function(){
 
   ExchangeCurrency.getCurrency()
     .then(function(response){ 
-      console.log(Object.keys(response['conversion_rates']));
+      let currency = $('select#countries').val();
+      const conversion_rates = Object.keys(response['conversion_rates']);
+      conversion_rates.forEach(function(element){
+        if (currency === element) {
+          console.log(currency)
+          console.log(element)
+          $('#output').text("Currency does not exist");
+        }else {
+          getElement(response);
+        }
 
-       
-      getElement(response);
+
+      })
+     
+      for(let i=0; i <= conversion_rates.length; i++){
+        if (currency === conversion_rates[i]) {
+          getElement(response);
+          return true
+          
+
+        }else {
+          return false
+          // $('#output').text("Currency in question does not exist");
+        }
+      }    
     })
     .catch(function(error){
       $('#output').text(`There was an error: ${error.message}`);   
