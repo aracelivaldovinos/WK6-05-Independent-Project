@@ -1,13 +1,11 @@
 // import Project from './project';
-// import $ from 'jquery';
+import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import ExchangeCurrency from './exchange-currency.js';
 
-// function convertion(response) {
 
-// }
 
 function getElement(response) {
   console.log(response);
@@ -19,10 +17,13 @@ function getElement(response) {
   // }
 
 }
+$('button#conversionBtn').click(function(){
+  let usDollars = parseInt($('input#userInput').val());
+  console.log(usDollars);
+  ExchangeCurrency.getCurrency()
+    .then(function(response){
+      getElement(response);
+    });
+});
 
-// let usDollars = 5;
-ExchangeCurrency.getCurrency()
-  .then(function(response){
-    getElement(response);
-  });
 
