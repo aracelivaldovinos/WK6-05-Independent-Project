@@ -8,6 +8,7 @@ import ExchangeCurrency from './exchange-currency.js';
 
 function getElement(response) {
   console.log(response);
+  console.log(response['conversion_rates']);
   // if (response['conversion_rates']) {
   //   $()
   // }
