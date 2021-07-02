@@ -21,16 +21,16 @@ $('button#conversionBtn').click(function(){
       $('#output').text((usDollars * `${response['conversion_rates']['CAD']}`).toFixed(2));
     }
   }
-// $('button#conversionBtn').click(function(){
-//   let usDollars = parseInt($('input#userInput').val());
+
   ExchangeCurrency.getCurrency()
     .then(function(response){ 
       getElement(response);
     })
     .catch(function(error){
-      $('#output').text(`${response.message}`);   
-      console.log(error);
-    });
+      $('#output').text(`There was an error: ${error.message}`);   
+      console.log(error.message);
+      // console.log(error);
+    }); 
 });
 
 
