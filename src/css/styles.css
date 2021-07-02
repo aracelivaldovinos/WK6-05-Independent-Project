@@ -1,3 +1,7 @@
 body {
-  background-color: yellow;
+  background-color: white;
+}
+
+#col1{
+  background-color: rgb(163, 162, 162);
 }
