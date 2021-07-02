@@ -17,42 +17,37 @@ $('button#conversionBtn').click(function(){
       $('#output').text((usDollars * `${response['conversion_rates']['GBP']}`).toFixed(2));
     }else if ($('select#countries').val() === "AUD"){
       $('#output').text((usDollars * `${response['conversion_rates']['AUD']}`).toFixed(2));
-    }else {
+    }else if ($('select#countries').val() === "CAD"){
       $('#output').text((usDollars * `${response['conversion_rates']['CAD']}`).toFixed(2));
+    }else {
+      let currency = $('select#countries').val();
+      const conversion_rates = Object.keys(response['conversion_rates']);
+      conversion_rates.forEach(function(element){
+        if (currency !== element) {
+          console.log(currency)
+          console.log(element)
+          $("#output").text("Currency does not exist!"); 
+        } 
+           
+          
+          
+
+      });  
+      
     }
   }
 
   ExchangeCurrency.getCurrency()
     .then(function(response){ 
-      let currency = $('select#countries').val();
-      const conversion_rates = Object.keys(response['conversion_rates']);
-      conversion_rates.forEach(function(element){
-        if (currency === element) {
-          console.log(currency)
-          console.log(element)
-          $('#output').text("Currency does not exist");
-        }else {
-          getElement(response);
-        }
-
-
-      })
-     
-      for(let i=0; i <= conversion_rates.length; i++){
-        if (currency === conversion_rates[i]) {
-          getElement(response);
-          return true
+      // let currency = $('select#countries').val();
+      // const conversion_rates = Object.keys(response['conversion_rates']);
+      getElement(response); 
           
-
-        }else {
-          return false
-          // $('#output').text("Currency in question does not exist");
-        }
-      }    
     })
-    .catch(function(error){
-      $('#output').text(`There was an error: ${error.message}`);   
-      console.log(error.message);
+    
+    .catch(function(error1){
+      $('#output').text(`There was an error: ${error1.message}`);   
+      console.log(error1.message);
       // console.log(error);
     }); 
 });
