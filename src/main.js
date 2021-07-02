@@ -24,6 +24,9 @@ $('button#conversionBtn').click(function(){
 
   ExchangeCurrency.getCurrency()
     .then(function(response){ 
+      console.log(Object.keys(response['conversion_rates']));
+
+       
       getElement(response);
     })
     .catch(function(error){
