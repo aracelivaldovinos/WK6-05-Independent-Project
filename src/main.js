@@ -3,17 +3,19 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
+import ExchangeCurrency from './exchange-currency.js';
 
-console.log(fetch (`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`))
- .then(function(response){
+
+function getElement(response) {
   console.log(response);
-  if (!response.ok){
-    throw Error(response.statusText);
-  }
-  console.log(response.json());
-})
-.catch(function(error){
-  return error;
-});
+  // if (response['conversion_rates']) {
+  //   $()
+  // }
 
+}
+
+ExchangeCurrency.getCurrency()
+  .then(function(response){
+    getElement(response);
+  });
 
