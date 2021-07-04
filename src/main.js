@@ -10,10 +10,10 @@ $('button#conversionBtn').click(function(){
  
   ExchangeCurrency.getCurrency()
     .then(function(response){ 
+      console.log(response);
       let currency = $('select#countries').val();
       let usDollars = Math.round(parseInt($('input#userInput').val()));
       const key = response['conversion_rates'];
-      console.log(key);
       if (currency in key){
         let newCurrency = (usDollars*(key[currency]));
         $('#output').text((newCurrency.toFixed(2)));
