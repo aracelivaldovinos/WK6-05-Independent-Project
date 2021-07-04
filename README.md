@@ -14,7 +14,7 @@
 * _Exchange Rate API_
 
 ## Description
-_ A currency exchange application that allows a user to type in an amount (in U.S. dollars) and then choose which currency it should be converted to (Euro, Yen, Australian Dollars, Canada Dollars, Pounds). To determine the most recent exchange rate, your application will make an API call to the following exchange rate API: [ExchangeRate-API] (https://www.exchangerate-api.com/). The application must do the following: _
+_A currency exchange application that allows a user to type in an amount (in U.S. dollars) and then choose which currency it should be converted to (Euro, Yen, Australian Dollars, Canada Dollars, Pounds). To determine the most recent exchange rate, your application will make an API call to the following exchange rate API: [ExchangeRate-API] (https://www.exchangerate-api.com/). The application must do the following:_
 * _RA user should be able to enter an amount (in U.S. dollars) and then specify another currency (such as the South Korean won). The user should then see the total amount they entered in converted currency. In the example above, a user might enter 10 dollars and then see that amount in South Korean won._
 * _Users should be able to convert U.S. currency into at least 5 other types of currency._
 * _If the API call results in an error (any message not a 200 OK), the application should return a notification to the user that states what the error is. (That means the error should show up in the DOM, not in the console.)_
