@@ -35,8 +35,8 @@ _A currency exchange application that allows a user to type in an amount (in U.S
 
 ## Known Bugs/Goals
 
-* _I would like another catch method for "Currency does not exist."to replace else statement_
-* _I would also like add another API for currency symbols_
+* _I would like to add another catch method for "Currency does not exist."to replace else statement_
+* _I would also like to add another API for currency symbols_
 
 
 ## License
