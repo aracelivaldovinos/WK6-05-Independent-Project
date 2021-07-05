@@ -26,17 +26,18 @@ _A currency exchange application that allows a user to type in an amount (in U.S
 * _Clone the repository to desktop using "git clone" in terminal._
 * _Open cloned folder in text editor of your choice._
 * _Create an '.env' file in the project root directory._
-* _Register for a free API by: Visiting the [ExchangeRate-API](https://www.exchangerate-api.com/) site . Input your email address and click the "Get Free Key" button._
+* _Register for a free API by visiting the [ExchangeRate-API](https://www.exchangerate-api.com/) site . Input your email address and click the "Get Free Key" button._
 * _Complete registration for a key then copy and paste API key in the .env file._
 * _In the .env file, add the API key in place of  [Your API KEY] in the "API_KEY=[Your API KEY]" template._
-* _Add ".env" in the gitignore file in order to hide .env file from the public._
+* _Add ".env" in the .gitignore file in order to hide .env file from the public._
 * _Run "npm install" in the terminal or command line to download dependencies._
 * _Run "npm run start" in terminal._
 
-## Known Bugs
+## Known Bugs/Goals
 
-* _Any known issues_
-* _should go here_
+* _I would like another catch method for "Currency does not exist."to replace else statement_
+* _I would also like add another API for currency symbols_
+
 
 ## License
 _[MIT](https://opensource.org/licenses/MIT) (c) 2021 Araceli Valdovinos_

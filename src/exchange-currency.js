@@ -6,9 +6,6 @@ export default class ExchangeCurrency {
           throw Error(response.status);
         }
         return response.json();
-      });
-      
-   
-  }
-  
+      });  
+  } 
 }
