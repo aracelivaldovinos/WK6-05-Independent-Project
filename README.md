@@ -37,8 +37,7 @@ _A currency exchange application that allows a user to type in an amount (in U.S
 
 ## Known Bugs/Goals
 
-* _No known bugs._
-
+* _Add API tests._
 
 ## License
 _[MIT](https://opensource.org/licenses/MIT) (c) 2021 Araceli Valdovinos_
