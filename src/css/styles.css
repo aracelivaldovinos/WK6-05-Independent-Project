@@ -10,7 +10,7 @@
 
 html, body {
     height: 100%;
-    background-color: #152733;
+    background-color: #40916c;
     overflow: hidden;
 }
 
@@ -108,6 +108,14 @@ html, body {
     outline: none !important;
     border: none !important;
      box-shadow: none;
+}
+
+.invalidInput p{
+  background-color: red;
+  padding: 5px;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
 }
 
 

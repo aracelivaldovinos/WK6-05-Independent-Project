@@ -11,7 +11,7 @@
 * _JavaScript/jQuery_
 * _Webpack_
 * _Node Package Manager_
-* _Exchange Rate API_
+
 
 ## Description
 _A currency exchange application that allows a user to type in an amount (in U.S. dollars) and then choose which currency it should be converted to (Euro, Yen, Australian Dollars, Canada Dollars, Pounds). To determine the most recent exchange rate, your application will make an API call to the following exchange rate API: [ExchangeRate-API](https://www.exchangerate-api.com/). The application must do the following:_
@@ -35,8 +35,7 @@ _A currency exchange application that allows a user to type in an amount (in U.S
 
 ## Known Bugs/Goals
 
-* _I would like to add another catch method for "Currency does not exist."to replace else statement_
-* _I would also like to add another API for currency symbols_
+* __
 
 
 ## License

@@ -10,18 +10,26 @@
           <div class="form-items">
             <h3>Currency Exchanger</h3>
             <p>Fill in the information below.</p>
+            <div class="invalidItems"></div>
             <form>
               <div class="row">
+                <div>
+                  <label>From:</label>
+                </div>
                 <div class="col-md-6">
-                  <input class="form-control" type="text" name="dollar-input" placeholder="Amount" required>
+                  <input class="form-control" type="text" name="userInput1" id="userInput1" placeholder="Amount" required>
                 </div>
                 <div class="col-md-6">
                   <select class="form-select mt-3" id="countries1" required></select>     
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6">
-                  <input class="form-control" type="text" name="dollar-input" placeholder="Amount" required>
+                <div>
+                  <br>
+                  <label>To:</label>
+                </div>
+                <div class="col-md-6" id="input">
+                  <input class="form-control" type="text" name="userInput2" id="userInput2" placeholder="Amount" disabled>
                 </div>
                 <div class="col-md-6">
                   <select class="form-select mt-3" id="countries2" required></select>  
