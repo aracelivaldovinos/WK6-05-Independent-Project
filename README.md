@@ -35,7 +35,7 @@ _A currency exchange application that allows a user to type in an amount (in U.S
 
 ## Known Bugs/Goals
 
-* __
+* _No known bugs._
 
 
 ## License

@@ -28,7 +28,7 @@ getCountries()
 
   })
   .catch(function(error){   
-    console.log(error.message);
+    $(".invalidItems").append(`<div class='invalidInput'><p>${error}</p></div>`);
   });
 
 
@@ -47,14 +47,17 @@ $('button').click(function(){
           $("#input").empty();
           $("#input").append(`<input class="form-control" type="text" name="userInput2" id="userInput2" placeholder=${conversion} disabled>`);
         }
+        else{
+          $(".invalidItems").append("<div class='invalidInput'><p>Currency in question doesn't exist.</p></div>");
+        }
       }else{
         console.log("not a number");
         $(".invalidItems").append("<div class='invalidInput'><p>Enter a positive number.</p></div>");
-
       }
     })
-    .catch(function(error){   
-      console.log(error.message);
+    .catch(function(error){  
+      // console.log(error);
+      $(".invalidItems").append(`<div class='invalidInput'><p>${error}</p></div>`);
     }); 
     
   $(".invalidInput").empty();

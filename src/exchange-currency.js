@@ -1,5 +1,5 @@
 export function getCurrency() {
-  return (fetch (`https://v6.exchangerate-api.com/v6/1243dfd835c0236cbdb1a459/latest/USD`))
+  return (fetch (`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`))
     .then(function(response){
       if (!response.ok){
         throw Error(response.status);
