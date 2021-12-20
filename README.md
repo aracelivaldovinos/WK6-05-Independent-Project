@@ -4,6 +4,8 @@
 
 #### By Araceli Valdovinos
 
+![Converter_image](currency_image.png)
+
 ## Technologies Used
 
 * _HTML_
