@@ -3,35 +3,38 @@
 <head>
   <title>Currency Exchange</title>
 </head>
-<body>
-  <h1>Currency Converter</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p>Currency I have:</p>
-          <input type="text" id="userInput" placeholder="$ U.S. dollars">
-          <button type="button" id="conversionBtn">submit</button>
-       
+  <body>
+    <div class="form-body">
+      <div class="form-holder">
+        <div class="form-content">
+          <div class="form-items">
+            <h3>Currency Exchanger</h3>
+            <p>Fill in the information below.</p>
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <input class="form-control" type="text" name="dollar-input" placeholder="Amount" required>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select mt-3" id="countries1" required></select>     
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input class="form-control" type="text" name="dollar-input" placeholder="Amount" required>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select mt-3" id="countries2" required></select>  
+                </div>
+              </div>
+              <div class="form-button mt-3">
+                  <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <p>Currency I want:</p>
-          <select class="form-control" id="countries">
-            <option value ="NONE">Choose...</option>
-            <option value="EUR" >Euro  EUR</option>
-            <option value="JPY">Japanese Yen   JPY </option>
-            <option value="GBP">British Pound   GBP</option>
-            <option value="AUD">Australian Dollar    AUD</option>
-            <option value="CAD">Canadian Dollar     CAD</option>
-          </select>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="row" id="center">
-        <div class="col-sm-6">
-          <h2><p id="output"></p></h2>
-        </div>
-      </div>
+      </div>  
     </div>
-</body>
+  </body>
 </html>
+
