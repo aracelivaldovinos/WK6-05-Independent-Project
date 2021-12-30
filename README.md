@@ -5,6 +5,7 @@
 #### By Araceli Valdovinos
 
 ![Converter_image](currency_image.png)
+_[Currency Converter Live Site](https://aracelivaldovinos.github.io/js-currency-converter/)_
 
 ## Technologies Used
 
@@ -38,6 +39,7 @@ _A currency exchange application that allows a user to type in an amount (in U.S
 ## Known Bugs/Goals
 
 * _Add API tests._
+* _Round counversion output_
 
 ## License
 _[MIT](https://opensource.org/licenses/MIT) (c) 2021 Araceli Valdovinos_
